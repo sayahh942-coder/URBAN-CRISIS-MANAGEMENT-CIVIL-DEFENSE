@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سامانه جامع پدافند غیر عامل در مدیریت بحران شهری</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="welcomeModal" class="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+  <div class="welcome-backdrop"></div>
+  <div class="welcome-card">
+    <div class="welcome-emblem"><span>CR</span><i>✦</i></div>
+    <span class="eyebrow">URBAN CRISIS MANAGEMENT & CIVIL DEFENSE</span>
+    <h1 id="welcomeTitle">سامانه جامع پدافند غیر عامل در مدیریت بحران شهری</h1>
+    <p class="welcome-text">خوش آمدید. این سامانه یک محیط یکپارچه برای پایش آمادگی، ارزیابی ریسک، مدیریت شاخص‌های عملکرد، هشدار زودهنگام، منابع، پروژه‌ها و اقدامات اصلاحی در مدیریت بحران شهری است.</p>
+    <div class="welcome-meta"><span>طراح</span><strong>دکتر حسین حجتی سیاح</strong><a href="tel:09124752901">09124752901</a></div>
+    <button id="enterSystem" class="primary welcome-enter">ورود به سامانه <span>←</span></button>
+  </div>
+</div>
+<div id="guideModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+  <div class="modal-backdrop" data-close-guide></div>
+  <div class="guide-card">
+    <div class="guide-head"><div><span class="eyebrow">USER GUIDE / PROPOSAL BASED</span><h2 id="guideTitle">راهنمای سامانه</h2></div><button class="icon-btn" data-close-guide aria-label="بستن">×</button></div>
+    <div class="guide-body">
+      <aside class="guide-nav">
+        <button class="guide-tab active" data-guide="intro">معرفی و کارکرد</button>
+        <button class="guide-tab" data-guide="cri">CRI و شاخص‌ها</button>
+        <button class="guide-tab" data-guide="kpis">KPI و وضعیت‌ها</button>
+        <button class="guide-tab" data-guide="risk">ریسک و سناریو</button>
+        <button class="guide-tab" data-guide="roadmap">پروژه‌ها و نقشه راه</button>
+        <button class="guide-tab" data-guide="ews">EWS و جامعه</button>
+        <button class="guide-tab" data-guide="finance">منابع و آوار</button>
+        <button class="guide-tab" data-guide="pdca">PDCA و گزارش</button>
+      </aside>
+      <div class="guide-content">
+        <section class="guide-section active" id="guide-intro"><h3>۱. سامانه چه کاری انجام می‌دهد؟</h3><p>این سامانه بر مبنای چارچوب پیشنهادی «طرح مدیریت بحران شهری» طراحی شده است و هدف آن حرکت از واکنش پسینی به سمت آمادگی نهادی پیشینی و ایجاد یک محیط واحد برای تصمیم‌گیری، پایش و اصلاح عملکرد است.</p><div class="guide-grid"><div><b>پایش</b><span>KPI، CRI، روند عملکرد و وضعیت هشدار</span></div><div><b>تصمیم‌گیری</b><span>ریسک، سناریو و اولویت اقدامات</span></div><div><b>اجرا</b><span>پروژه‌ها، منابع و اقدامات اصلاحی</span></div><div><b>یادگیری</b><span>PDCA، گزارش‌دهی و بازبینی پس از بحران</span></div></div></section>
+        <section class="guide-section" id="guide-cri"><h3>۲. شاخص آمادگی بحران (CRI)</h3><p>مطابق پروپوزال، <b>CRI = Crisis Readiness Index</b> در مقیاس ۰ تا ۱۰۰ محاسبه می‌شود:</p><div class="formula-box">CRI = 0.20 × SDG Alignment + 0.30 × خدمات حیاتی + 0.25 × قرارداد اجتماعی + 0.25 × منابع</div><p>آستانه‌های CRI: <span class="pill good">مطلوب: ≥ 75</span> <span class="pill warn">هشدار: 50 تا 75</span> <span class="pill bad">بحرانی: &lt; 50</span></p><p class="note">در پیاده‌سازی سامانه، «خدمات حیاتی»، «قرارداد اجتماعی» و «منابع» با شاخص‌های عملیاتی متناظر داشبورد مدل شده‌اند تا محاسبه خودکار امکان‌پذیر باشد.</p></section>
+        <section class="guide-section" id="guide-kpis"><h3>۳. KPIها و منطق وضعیت‌دهی</h3><p>هر KPI دارای تعریف، واحد، فرمول، دوره پایش و سه محدوده مطلوب، هشدار و بحرانی است. مقدار ورودی در صفحه «مرکز KPI و CRI» ثبت می‌شود و سامانه وضعیت و امتیاز نرمال‌شده را محاسبه می‌کند.</p><div class="guide-table"><div><b>نمونه</b><b>فرمول / تعریف</b><b>آستانه</b></div><div><span>Inter-agency Coordination Time</span><span>زمان صدور دستور نهایی − زمان اعلام بحران</span><span>≤12h مطلوب / 12–24 هشدار / &gt;24 بحرانی</span></div><div><span>IDRM Maturity</span><span>∑ امتیازات تحقق مؤلفه‌ها ÷ تعداد مؤلفه‌ها</span><span>≥4 مطلوب / 3–4 هشدار / ≤2 بحرانی</span></div><div><span>EWS Coverage</span><span>درصد پوشش سیستم هشدار</span><span>≥70% مطلوب / 40–70 هشدار / &lt;40 بحرانی</span></div><div><span>False Alarm Rate</span><span>نرخ هشدار کاذب</span><span>≤10% مطلوب / 10–20 هشدار / &gt;20 بحرانی</span></div></div></section>
+        <section class="guide-section" id="guide-risk"><h3>۴. ارزیابی ریسک و سناریو</h3><p>در صفحه ریسک، احتمال و شدت قبل و بعد از اقدام وارد می‌شود. مطابق چارچوب پروپوزال:</p><div class="formula-box">Risk = Probability × Severity<br>Risk Reduction Index = Risk Before − Risk After</div><p>عدد مثبت در کاهش ریسک نشان می‌دهد که مقدار ریسک پس از اقدام کمتر شده است. ماتریس ۵×۵ برای مشاهده سطح ریسک استفاده می‌شود.</p></section>
+        <section class="guide-section" id="guide-roadmap"><h3>۵. پروژه‌ها و نقشه راه ۲۴ ماهه</h3><p>نقشه راه پروپوزال بر اهداف راهبردی، نتایج قابل مشاهده، OKRها و Milestoneها بنا شده است. پروژه‌های کلیدی شامل نظام فرماندهی بحران شهری، دستورالعمل خرید بحران، تمرین‌های سناریومحور، IWRM، مدیریت آوار، WWSG، EWS محله‌محور و Toolkit تصمیم‌گیری IDEAL است.</p><p>Gantt سامانه برای نمایش شروع و مدت پروژه‌ها و اتصال آن‌ها به KPIها استفاده می‌شود.</p></section>
+        <section class="guide-section" id="guide-ews"><h3>۶. هشدار زودهنگام و مشارکت جامعه</h3><p>در پروپوزال، EWS محله‌محور با سه شاخص اصلی پایش می‌شود: پوشش EWS، زمان پیش‌آگاهی و نرخ هشدار کاذب. همچنین شاخص‌های Participation Rate، Trust Index و Complaint Resolution Time برای ارتباط با جامعه به‌کار می‌روند.</p><div class="formula-box">Participation Rate = (شهروندان مشارکت‌کننده ÷ کل شهروندان هدف) × 100</div></section>
+        <section class="guide-section" id="guide-finance"><h3>۷. منابع مالی و مدیریت آوار</h3><p>برای منابع، پروپوزال بر بودجه، نقدینگی صندوق اضطراری و تجهیز منابع پس از بحران تأکید دارد.</p><div class="formula-box">Budget Utilization = (بودجه مصرفی ÷ بودجه تخصیصی) × 100<br>Fund Liquidity = (موجودی قابل دسترسی ÷ نیاز اضطراری) × 100<br>Fund Mobilization = (منابع جمع‌آوری‌شده ÷ هدف منابع) × 100</div><p>مدیریت آوار نیز در سه فاز «تخلیه اضطراری»، «TDSR» و «بازیافت/امحاء با رویکرد Build Back Better» دنبال می‌شود.</p></section>
+        <section class="guide-section" id="guide-pdca"><h3>۸. PDCA، پایش و گزارش‌دهی</h3><p>چرخه PDCA (Plan–Do–Check–Act) برای تبدیل نتایج پایش به اقدام اصلاحی استفاده می‌شود. کاربر می‌تواند اقدام، مسئول، موعد، اولویت و وضعیت را ثبت و اقدامات بسته‌شده را پیگیری کند.</p><p>دوره‌های پایش پروپوزال شامل گزارش‌های ماهانه، فصلی، شش‌ماهه و بازبینی پس از بحران است. داده‌ها در این نسخه به‌صورت محلی در مرورگر ذخیره و از طریق JSON قابل پشتیبان‌گیری هستند.</p></section>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">پ</div><div><b>سامانه جامع پدافند غیر عامل</b><small>مدیریت بحران شهری</small></div></div>
+  <div class="city-box"><label>سازمان / شهر</label><input id="orgName" value="مدیریت بحران شهری"><input id="cityName" value="شهرداری نمونه"></div>
+  <nav id="nav">
+    <button class="active" data-page="dashboard">◈ داشبورد فرماندهی</button>
+    <button data-page="kpi">▦ مرکز KPI و CRI</button>
+    <button data-page="risk">⚠ ارزیابی ریسک و سناریو</button>
+    <button data-page="projects">▤ پروژه‌ها و Gantt</button>
+    <button data-page="budget">▣ بودجه و منابع</button>
+    <button data-page="debris">♜ آوار و پسماند</button>
+    <button data-page="ews">◉ هشدار زودهنگام EWS</button>
+    <button data-page="actions">✓ اقدامات اصلاحی / PDCA</button>
+    <button data-page="reports">▤ گزارش مدیریتی</button>
+    <button data-page="settings">⚙ تنظیمات و داده</button>
+  </nav>
+  <div class="sidebar-foot"><span class="live-dot"></span> موتور محاسبات فعال <small>Local / Offline</small></div>
+</aside>
+<main>
+<header class="topbar"><div><span class="eyebrow">سامانه جامع پدافند غیر عامل در مدیریت بحران شهری</span><h1 id="pageTitle">داشبورد فرماندهی بحران</h1></div><div class="top-actions"><span id="saveStatus">ذخیره خودکار فعال</span><button onclick="openGuide()">راهنما</button><button onclick="saveState(true)">ذخیره</button><button class="primary" onclick="printReport()">گزارش / PDF</button></div></header>
+
+<section id="page-dashboard" class="page active">
+  <div class="hero-grid">
+    <div class="hero-card"><div><span class="tag">CITY RESILIENCE INDEX</span><h2 id="criValue">—</h2><p id="criStatus">در حال محاسبه</p></div><div class="ring" id="criRing"><span id="criRingText">—</span></div></div>
+    <div class="command-card"><div class="section-head"><div><span class="eyebrow">COMMAND CENTER</span><h3>وضعیت عملیاتی</h3></div><span class="badge" id="overallBadge">—</span></div><div class="command-grid"><div><b id="criticalCount">0</b><span>KPI بحرانی</span></div><div><b id="warningCount">0</b><span>KPI هشدار</span></div><div><b id="activeProjects">0</b><span>پروژه فعال</span></div><div><b id="openActions">0</b><span>اقدام باز</span></div></div></div>
+  </div>
+  <div class="grid-3"><div class="panel"><div class="section-head"><h3>شاخص‌های کلیدی</h3><button onclick="showPage('kpi')">مشاهده همه</button></div><div id="kpiMini"></div></div><div class="panel"><div class="section-head"><h3>هشدارهای مدیریتی</h3><button onclick="showPage('actions')">مدیریت</button></div><div id="alertsMini"></div></div><div class="panel"><div class="section-head"><h3>چرخه گزارش‌دهی</h3></div><div class="report-cycle"><div><b>ماهانه</b><span>Dashboard KPI</span></div><div><b>فصلی</b><span>Review Performance</span></div><div><b>۶ ماهه</b><span>SDG / VLR</span></div><div><b>حادثه</b><span>Incident Review</span></div></div></div></div>
+  <div class="panel"><div class="section-head"><h3>روند CRI و وضعیت عملکرد</h3><div class="legend"><i></i> CRI <i></i> آستانه 75</div></div><svg id="trendChart" viewBox="0 0 900 260" preserveAspectRatio="none"></svg></div>
+</section>
+
+<section id="page-kpi" class="page"><div class="section-title"><div><span class="eyebrow">PERFORMANCE ENGINE</span><h2>مرکز KPI و محاسبه CRI</h2><p>مقادیر ورودی را ثبت کنید؛ وضعیت، امتیاز و اثر آن بر CRI به‌صورت خودکار محاسبه می‌شود.</p></div><button class="primary" onclick="addSnapshot()">ثبت Snapshot جدید</button></div><div class="panel"><div class="filters"><input id="kpiSearch" placeholder="جستجوی KPI..." oninput="renderKpis()"><select id="kpiGroup" onchange="renderKpis()"><option value="all">همه گروه‌ها</option><option value="governance">حاکمیت</option><option value="financial">مالی</option><option value="operational">عملیاتی</option><option value="social">اجتماعی</option><option value="ews">EWS</option><option value="outcome">نتایج</option><option value="debris">آوار</option></select></div><div id="kpiTable" class="table-wrap"></div></div></section>
+
+<section id="page-risk" class="page"><div class="section-title"><div><span class="eyebrow">RISK ENGINE</span><h2>ارزیابی ریسک و سناریو</h2><p>ریسک پایه بر اساس «احتمال × شدت» و کاهش ریسک بر اساس Risk Before − Risk After محاسبه می‌شود.</p></div><button class="primary" onclick="addRisk()">+ سناریوی جدید</button></div><div class="grid-2"><div class="panel"><h3>ثبت / ویرایش سناریو</h3><form id="riskForm" class="form-grid"><input type="hidden" id="riskId"><label>عنوان سناریو<input id="riskName" required></label><label>مخاطره<select id="riskHazard"><option>سیل شهری</option><option>زلزله</option><option>آتش‌سوزی</option><option>طوفان</option><option>آلودگی / پسماند</option><option>ترکیبی</option></select></label><label>احتمال قبل (۱–۵)<input id="riskPB" type="number" min="1" max="5" value="4"></label><label>شدت قبل (۱–۵)<input id="riskSB" type="number" min="1" max="5" value="4"></label><label>احتمال بعد (۱–۵)<input id="riskPA" type="number" min="1" max="5" value="2"></label><label>شدت بعد (۱–۵)<input id="riskSA" type="number" min="1" max="5" value="3"></label><label class="wide">اقدام کاهنده ریسک<input id="riskControl" placeholder="مثلاً توسعه EWS / اصلاح مسیر تخلیه"></label><button class="primary wide" type="submit">محاسبه و ذخیره</button></form></div><div class="panel"><h3>ماتریس ریسک</h3><div id="riskMatrix" class="risk-matrix"></div><div id="riskSummary"></div></div></div><div class="panel"><h3>سناریوهای ثبت‌شده</h3><div id="riskTable" class="table-wrap"></div></div></section>
+
+<section id="page-projects" class="page"><div class="section-title"><div><span class="eyebrow">24-MONTH ROADMAP</span><h2>پروژه‌ها و Gantt</h2></div><button class="primary" onclick="addProject()">+ پروژه</button></div><div class="panel"><div id="projectTable" class="table-wrap"></div><div id="gantt" class="gantt"></div></div></section>
+
+<section id="page-budget" class="page"><div class="section-title"><div><span class="eyebrow">FINANCE & RESOURCES</span><h2>بودجه و منابع اضطراری</h2></div></div><div class="metric-cards" id="budgetCards"></div><div class="grid-2"><div class="panel"><h3>ثبت بودجه</h3><form id="budgetForm" class="form-grid"><label>عنوان<input id="budName"></label><label>تخصیص (میلیون)<input id="budAlloc" type="number"></label><label>مصرف (میلیون)<input id="budSpent" type="number"></label><label>نیاز اضطراری (میلیون)<input id="budNeed" type="number"></label><label>موجودی قابل دسترسی<input id="budAvail" type="number"></label><button class="primary wide" type="submit">ثبت / به‌روزرسانی</button></form></div><div class="panel"><h3>شاخص‌های مالی پروپوزال</h3><div id="financeKpis"></div></div></div></section>
+
+<section id="page-debris" class="page"><div class="section-title"><div><span class="eyebrow">OPERATIONAL DEBRIS MANAGEMENT</span><h2>مدیریت آوار و پسماند</h2><p>برای پاکسازی ۷۲ ساعت اول، TDSR، تفکیک و بازیافت پایش می‌شود.</p></div></div><div class="metric-cards" id="debrisCards"></div><div class="grid-2"><div class="panel"><h3>ثبت عملیات</h3><form id="debrisForm" class="form-grid"><label>کل آوار (تن)<input id="debTotal" type="number"></label><label>جمع‌آوری‌شده (تن)<input id="debRemoved" type="number"></label><label>بازیافت/استفاده مجدد (تن)<input id="debReuse" type="number"></label><label>پسماند خطرناک (تن)<input id="debHazTotal" type="number"></label><label>تفکیک‌شده خطرناک (تن)<input id="debHazSep" type="number"></label><label>مسیرهای حیاتی کل<input id="debRoads" type="number"></label><label>مسیرهای بازشده<input id="debRoadsOpen" type="number"></label><label>زمان متوسط بازگشایی (ساعت)<input id="debRoadTime" type="number"></label><button class="primary wide" type="submit">محاسبه شاخص‌ها</button></form></div><div class="panel"><h3>فازهای عملیاتی</h3><div class="phase"><b>01</b><span><strong>Emergency Clearance</strong><small>پاکسازی شریان‌های اصلی و مسیر مراکز حیاتی</small></span></div><div class="phase"><b>02</b><span><strong>TDSR</strong><small>ایجاد ایستگاه موقت دپو و تفکیک</small></span></div><div class="phase"><b>03</b><span><strong>Recycling / BBB</strong><small>بازیافت، استفاده مجدد و کاهش اثر محیط‌زیستی</small></span></div></div></div></section>
+
+<section id="page-ews" class="page"><div class="section-title"><div><span class="eyebrow">EARLY WARNING SYSTEM</span><h2>هشدار زودهنگام و پاسخ جامعه</h2></div><button class="primary" onclick="addAlert()">+ ثبت هشدار</button></div><div class="metric-cards" id="ewsCards"></div><div class="panel"><div id="ewsTable" class="table-wrap"></div></div></section>
+
+<section id="page-actions" class="page"><div class="section-title"><div><span class="eyebrow">PDCA / CAPA</span><h2>اقدامات اصلاحی و پیگیری</h2></div><button class="primary" onclick="addAction()">+ اقدام جدید</button></div><div class="panel"><div id="actionTable" class="table-wrap"></div></div></section>
+
+<section id="page-reports" class="page"><div class="section-title"><div><span class="eyebrow">MANAGEMENT REPORTING</span><h2>گزارش مدیریتی</h2></div><button class="primary" onclick="printReport()">چاپ / PDF</button></div><div id="reportPreview" class="report"></div></section>
+
+<section id="page-settings" class="page"><div class="section-title"><div><span class="eyebrow">DATA & CONFIGURATION</span><h2>تنظیمات و داده</h2></div></div><div class="grid-2"><div class="panel"><h3>پشتیبان‌گیری</h3><p>تمام داده‌ها در مرورگر ذخیره می‌شوند و می‌توانید فایل JSON تهیه و در دستگاه دیگری بازیابی کنید.</p><div class="button-row"><button onclick="exportData()">خروجی JSON</button><button onclick="document.getElementById('importFile').click()">ورود JSON</button><input id="importFile" type="file" accept="application/json" hidden></div><button class="danger" onclick="resetApp()">بازنشانی داده‌های نمونه</button></div><div class="panel"><h3>تعریف سازمان</h3><label>نام سازمان<input id="setOrg"></label><label>نام شهر<input id="setCity"></label><label>مسئول سامانه<input id="setManager"></label><label>دوره گزارش<select id="setPeriod"><option>ماهانه</option><option>فصلی</option><option>شش‌ماهه</option></select></label><button class="primary" onclick="saveSettings()">ذخیره تنظیمات</button></div></div></section>
+</main>
+<script src="script.js"></script>
+</body></html>
